@@ -1,0 +1,27 @@
+[project]
+name = "BoilerPlate"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "MohammedRahmanSherif",email = "mohammedrahman.s@scanflow.ai"},
+]
+dependencies = [
+    "ultralytics>=8.2.96",
+    "opencv-python>=4.10.0.84",
+    "pytest>=8.3.3",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.6",
+    "python-multipart>=0.0.9",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "Perpetual"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "flask>=3.0.3",
+]
